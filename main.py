@@ -16,3 +16,18 @@ def get_positive_integer(prompt):
             print("Invalid input.")
             prompt = "Enter a positive integer: "
 
+
+def main():
+    print("This is Pythagorean Triple Checker")
+    side_1 = get_positive_integer("Enter side #1: ")
+    side_2 = get_positive_integer("Enter side #2: ")
+    side_3 = get_positive_integer("Enter side #3: ")
+
+    triangle_sides = [side_1, side_2, side_3]
+    triangle_sides.sort()
+
+    is_pythagorean_triple(triangle_sides.index(0), triangle_sides.index(1), triangle_sides.index(2))
+
+
+if __name__ == "__main__":
+    main()
