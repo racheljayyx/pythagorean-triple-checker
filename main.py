@@ -28,7 +28,7 @@ def main():
     triangle_sides = [side_1, side_2, side_3]
     triangle_sides.sort()
 
-    is_pythagorean_triple(triangle_sides.index(0), triangle_sides.index(1), triangle_sides.index(2))
+    is_pythagorean_triple(triangle_sides[0], triangle_sides[1], triangle_sides[2])
 
 
 if __name__ == "__main__":
