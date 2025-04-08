@@ -16,6 +16,8 @@ def get_positive_integer(prompt):
             print("Invalid input.")
             prompt = "Enter a positive integer: "
 
+    return num
+
 
 def main():
     print("This is Pythagorean Triple Checker")
